@@ -20,6 +20,8 @@
  * Boston, MA 02110-1301, USA.
  */
 
+// this app were disabled due to not a working thing. TODO
+
 #ifndef __UI_SD_WIPE_H__
 #define __UI_SD_WIPE_H__
 
@@ -59,7 +61,7 @@ class WipeSDView : public View {
 
         // f_opendir(&d, (TCHAR*)u"");
 
-        uint32_t count = 512;  // sd_card::fs.n_fats * sd_card::fs.fsize;
+        uint32_t count = 512;  // sd_card::fs.n_fats * sd_card::fs.fsize; TODO: this is not correct to hard code 512
         progress.set_max(count);
 
         for (uint32_t c = 0; c < count; c++) {

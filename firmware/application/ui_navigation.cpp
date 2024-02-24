@@ -67,7 +67,7 @@
 #include "ui_remote.hpp"
 #include "ui_scanner.hpp"
 #include "ui_sd_over_usb.hpp"
-#include "ui_sd_wipe.hpp"
+// #include "ui_sd_wipe.hpp" //temprarly remove due to not a working thing
 #include "ui_search.hpp"
 #include "ui_settings.hpp"
 #include "ui_siggen.hpp"
@@ -201,7 +201,7 @@ const NavigationView::AppList NavigationView::appList = {
     {"wavview", "Wav View", UTILITIES, Color::yellow(), &bitmap_icon_soundboard, new ViewFactory<ViewWavView>()},
     // Dangerous apps.
     {nullptr, "Flash Utility", UTILITIES, Color::red(), &bitmap_icon_temperature, new ViewFactory<FlashUtilityView>()},
-    {nullptr, "Wipe SD card", UTILITIES, Color::red(), &bitmap_icon_tools_wipesd, new ViewFactory<WipeSDView>()},
+    // {nullptr, "Wipe SD card", UTILITIES, Color::red(), &bitmap_icon_tools_wipesd, new ViewFactory<WipeSDView>()},
 };
 
 const NavigationView::AppMap NavigationView::appMap = generate_app_map(NavigationView::appList);

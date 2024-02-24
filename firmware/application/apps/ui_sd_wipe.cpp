@@ -20,6 +20,8 @@
  * Boston, MA 02110-1301, USA.
  */
 
+// this app were disabled due to not a working thing. TODO
+
 #include "ui_sd_wipe.hpp"
 
 namespace ui {
